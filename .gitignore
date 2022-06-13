@@ -1,0 +1,32 @@
+# Created by https://www.gitignore.io/api/r,python,visualstudiocode
+# Modified by AlfonsoAgAr
+
+### Python ignore ###
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+*.pyc
+*.cpython
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Cache
+*_cache/
+/cache/
+__pycache__/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# Ignore all XML files
+*.xml
