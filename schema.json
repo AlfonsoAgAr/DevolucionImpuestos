@@ -1,0 +1,24 @@
+{
+    "schema" : {
+        "General" : ["Total", "SubTotal", "Descuento", "Fecha", "Serie", "Sello", "NoCertificado", "Certificado"],
+        "Emisor" : ["Nombre", "RegimenFiscal", "Rfc"],
+        "Concepto" : ["ClaveProdServ", "ClaveUnidad", "Descripción", "Cantidad", "Descuento", "Importe", "ValorUnitario"],
+        "Nomina" : ["FechaInicialPago", "FechaFinalPago", "FechaPago", "NumDiasPagados", "TotalDeducciones", "TotalPercepciones"],
+        "Percepciones" : ["TotalExento", "TotalGravado", "TotalSueldos"],
+        "DesglosePercepciones" : ["Concepto", "ImporteGravado", "ImporteExento", "TipoPercepcion"],
+        "Deducciones" : ["TotalImpuestosRetenidos", "TotalOtrasDeducciones", "TotalImpuestosTrasladados"],
+        "DesgloseDeducciones" : ["Clave", "Concepto", "Importe", "TipoDeduccion"],
+        "Timbrado" : ["FechaTimbrado", "UUID", "NoCertificadoSAT", "SelloCFD", "SelloSAT"]
+        },
+    "match" : {
+        "General" : "cfdi:Comprobante",
+        "Emisor" : "cfdi:Emisor",
+        "Concepto" : "cfdi:Concepto",
+        "Nomina" : "nomina12:Nomina",
+        "Percepciones" : "nomina12:Percepciones",
+        "DesglosePercepciones" : "nomina12:Percepcion",
+        "Deducciones" : "nomina12:Deducciones",
+        "DesgloseDeducciones" : "nomina12:Deduccion",
+        "Timbrado" : "tfd:TimbreFiscalDigital"
+    }
+}
